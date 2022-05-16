@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 위 로그인</title>
+    <style>
+        body, html{height: 100%;}
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+    .bgimg{
+        background-image: url(sm.jpg);
+        min-height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    /* 자식요소 이미지 안에 박스 */
+    .container{
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+        margin: 20%;
+        max-width: 300px;
+        background-color: white;
+    }
+    input[type= text], input[type=password]{
+        width: 100%;
+        padding: 1rem;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: gray;
+    }
+    input[type=text]:focus, input [type=password]
+
+    .btn{
+        background-color: aquamarine;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .btn:hover{
+        opacity: 1;
+        background: darkcyan;
+    }
+    </style>
+</head>
+<body>
+    <div class="bgimg">
+        <form action="#"class="container">
+            <h1>login</h1>
+            <label for="Email">Email</label>
+            <input type="text" placeholder="이메일을 입력" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" placeholder="암호를 입력" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+    </div>
+</body>
+</html>
